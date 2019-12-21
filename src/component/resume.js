@@ -1,5 +1,8 @@
 import React, {Component} from 'react';
 import {Grid, Cell} from 'react-mdl';
+import Education from './education';
+import Experience from './experience';
+import Skill from './skill';
 
 class Resume extends Component{
     render(){
@@ -32,6 +35,68 @@ class Resume extends Component{
                     </Cell>
                     <Cell className="resume-right-col" col={8}>
                         <h2>Education</h2>
+                        <Education
+                            startYear={2012}
+                            endYear={2015}
+                            schoolName="My University"
+                            schoolDescription="Стандартният отрязък от Lorem Ipsum, използван от 1500 г. насам, е поместен по-долу за тези, които се интересуват. Секции 1.10.32 и 1.10.33 от de Finibus Bonorum et Malorum на Цицерон също са поместени в оригиналния им формат, заедно с превода им на английски език, направен от H. Rackham през 1914г. "
+                        />
+                        <Education
+                            startYear={2015}
+                            endYear={2020}
+                            schoolName="My 2nd Degree"
+                            schoolDescription="Стандартният отрязък от Lorem Ipsum, използван от 1500 г. насам, е поместен по-долу за тези, които се интересуват. Секции 1.10.32 и 1.10.33 от de Finibus Bonorum et Malorum на Цицерон също са поместени в оригиналния им формат, заедно с превода им на английски език, направен от H. Rackham през 1914г. "
+                        />
+                        <hr style={{borderTop: '3px solid #e22947'}}/>
+
+                        <h2>Experiences</h2>
+                        <Experience 
+                            startYear={2016}
+                            endYear={2019}
+                            jobName="First Job"
+                            jobDescription="Стандартният отрязък от Lorem Ipsum, използван от 1500 г. насам, е поместен по-долу за тези, които се интересуват. Секции 1.10.32 и 1.10.33 от de Finibus Bonorum et Malorum на Цицерон също са поместени в оригиналния им формат, заедно с превода им на английски език, направен от H. Rackham през 1914г."
+                        />
+                        <hr style={{borderTop: '3px solid #e22947'}}/>
+
+                        <h2>Skills</h2>
+                        <Skill
+                            skill="Javascript"
+                            progress={100}
+                        />
+                        <Skill
+                            skill="HTML"
+                            progress={80}
+                        />
+                        <Skill
+                            skill="CSS"
+                            progress={60}
+                        />
+                        <Skill
+                            skill="NodeJS"
+                            progress={70}
+                        />
+                        <Skill
+                            skill="PHP"
+                            progress={50}
+                        />
+                        <Skill
+                            skill="MongoDB"
+                            progress={80}
+                        />
+                        <Skill
+                            skill="VueJS"
+                            progress={30}
+                        />
+                        <Skill
+                            skill="Java"
+                            progress={70}
+                        />
+                        <Skill
+                            skill="Python"
+                            progress={50}
+                        />
+
+
                     </Cell>
                 </Grid>
             </div>
