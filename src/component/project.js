@@ -14,7 +14,7 @@ class Project extends Component {
         if (this.state.activeTab === 0) {
             return (
                 <div className="project-grid">
-                    {/* Input your Projetc here */}
+                    {/* Input your Projetc here, copy and paste if you want to creat more project links */}
                     <Card shadow={5} style={{ minWidth: '450', margin: 'auto' }}>
                         <CardTitle style={{ color: '#fff', height: '176px', background: 'url(https://facebook.github.io/react/logo-og.png) center / cover' }}>React Project 1</CardTitle>
                         <CardText>
@@ -46,6 +46,7 @@ class Project extends Component {
     render() {
         return (
             <div className="category-tabs">
+                {/* These are tabs for different programming language, copy and paste more <Tab> tag if you want ot add more */}
                 <Tabs activeTab={this.state.activeTab} onChange={(tabId) => this.setState({ activeTab: tabId })} ripple>
                     <Tab>React</Tab>
                     <Tab>VueJS</Tab>
